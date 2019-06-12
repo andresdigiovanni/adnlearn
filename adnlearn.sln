@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "adnlearn", "adnlearn\adnlearn.pyproj", "{F34C9129-FC0C-40A1-A0DB-6AD63F2DB7BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{6967C17C-8D2A-4A8B-AC2F-83162A9A67ED}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "boston-housing", "examples\boston-housing\boston-housing.pyproj", "{0889B148-7B5F-4001-804F-120D2A808F64}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "iris", "examples\iris\iris.pyproj", "{9497CE4C-6259-4E21-8375-10BC9ED1B753}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "spam", "examples\spam\spam.pyproj", "{149BD662-5C53-4358-9071-58415AEF87FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F34C9129-FC0C-40A1-A0DB-6AD63F2DB7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34C9129-FC0C-40A1-A0DB-6AD63F2DB7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0889B148-7B5F-4001-804F-120D2A808F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0889B148-7B5F-4001-804F-120D2A808F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9497CE4C-6259-4E21-8375-10BC9ED1B753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9497CE4C-6259-4E21-8375-10BC9ED1B753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149BD662-5C53-4358-9071-58415AEF87FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149BD662-5C53-4358-9071-58415AEF87FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0889B148-7B5F-4001-804F-120D2A808F64} = {6967C17C-8D2A-4A8B-AC2F-83162A9A67ED}
+		{9497CE4C-6259-4E21-8375-10BC9ED1B753} = {6967C17C-8D2A-4A8B-AC2F-83162A9A67ED}
+		{149BD662-5C53-4358-9071-58415AEF87FB} = {6967C17C-8D2A-4A8B-AC2F-83162A9A67ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE2C965E-8151-4A79-8C3B-8BD2FAD7982D}
+	EndGlobalSection
+EndGlobal

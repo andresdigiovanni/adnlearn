@@ -1,0 +1,152 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f34c9129-fc0c-40a1-a0db-6ad63f2db7be</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>adnlearn</Name>
+    <RootNamespace>adnlearn</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="adnlearn\" />
+    <Folder Include="adnlearn\dataset\" />
+    <Folder Include="adnlearn\models\" />
+    <Folder Include="adnlearn\models\boost\" />
+    <Folder Include="adnlearn\models\discriminant_analysis\" />
+    <Folder Include="adnlearn\models\ensemble\" />
+    <Folder Include="adnlearn\models\gaussian_process\" />
+    <Folder Include="adnlearn\models\isotonic\" />
+    <Folder Include="adnlearn\models\kernel_ridge\" />
+    <Folder Include="adnlearn\models\linear_model\" />
+    <Folder Include="adnlearn\models\naive_bayes\" />
+    <Folder Include="adnlearn\models\neighbors\" />
+    <Folder Include="adnlearn\models\neural_network\" />
+    <Folder Include="adnlearn\models\semi_supervised\" />
+    <Folder Include="adnlearn\models\svm\" />
+    <Folder Include="adnlearn\models\tree\" />
+    <Folder Include="adnlearn\preprocessor\" />
+    <Folder Include="adnlearn\storage\" />
+    <Folder Include="adnlearn\summarize\" />
+    <Folder Include="adnlearn\training\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adnlearn\dataset\split.py" />
+    <Compile Include="adnlearn\dataset\__init__.py" />
+    <Compile Include="adnlearn\models\boost\cat_boost_classifier.py" />
+    <Compile Include="adnlearn\models\boost\cat_boost_regressor.py" />
+    <Compile Include="adnlearn\models\boost\light_gbm_classifier.py" />
+    <Compile Include="adnlearn\models\boost\light_gbm_regressor.py" />
+    <Compile Include="adnlearn\models\boost\xgb_classifier.py" />
+    <Compile Include="adnlearn\models\boost\xgb_regressor.py" />
+    <Compile Include="adnlearn\models\boost\__init__.py" />
+    <Compile Include="adnlearn\models\discriminant_analysis\linear_discriminant_analysis.py" />
+    <Compile Include="adnlearn\models\discriminant_analysis\quadratic_discriminant_analysis.py" />
+    <Compile Include="adnlearn\models\discriminant_analysis\__init__.py" />
+    <Compile Include="adnlearn\models\ensemble\ada_boost_classifier.py" />
+    <Compile Include="adnlearn\models\ensemble\ada_boost_regressor.py" />
+    <Compile Include="adnlearn\models\ensemble\extra_trees_classifier.py" />
+    <Compile Include="adnlearn\models\ensemble\extra_trees_regressor.py" />
+    <Compile Include="adnlearn\models\ensemble\gradient_boosting_classifier.py" />
+    <Compile Include="adnlearn\models\ensemble\gradient_boosting_regressor.py" />
+    <Compile Include="adnlearn\models\ensemble\random_forest_classifier.py" />
+    <Compile Include="adnlearn\models\ensemble\random_forest_regressor.py" />
+    <Compile Include="adnlearn\models\ensemble\__init__.py" />
+    <Compile Include="adnlearn\models\gaussian_process\gaussian_process_classifier.py" />
+    <Compile Include="adnlearn\models\gaussian_process\gaussian_process_regressor.py" />
+    <Compile Include="adnlearn\models\gaussian_process\__init__.py" />
+    <Compile Include="adnlearn\models\isotonic\isotonic_regression.py" />
+    <Compile Include="adnlearn\models\isotonic\__init__.py" />
+    <Compile Include="adnlearn\models\kernel_ridge\kernel_ridge.py" />
+    <Compile Include="adnlearn\models\kernel_ridge\__init__.py" />
+    <Compile Include="adnlearn\models\linear_model\ard_regression.py" />
+    <Compile Include="adnlearn\models\linear_model\bayesian_ridge.py" />
+    <Compile Include="adnlearn\models\linear_model\elastic_net.py" />
+    <Compile Include="adnlearn\models\linear_model\huber_regressor.py" />
+    <Compile Include="adnlearn\models\linear_model\lars.py" />
+    <Compile Include="adnlearn\models\linear_model\lasso.py" />
+    <Compile Include="adnlearn\models\linear_model\lasso_lars.py" />
+    <Compile Include="adnlearn\models\linear_model\linear_regression.py" />
+    <Compile Include="adnlearn\models\linear_model\logistic_regression.py" />
+    <Compile Include="adnlearn\models\linear_model\multi_task_elastic_net.py" />
+    <Compile Include="adnlearn\models\linear_model\multi_task_lasso.py" />
+    <Compile Include="adnlearn\models\linear_model\orthogonal_matching_pursuit.py" />
+    <Compile Include="adnlearn\models\linear_model\passive_aggressive_classifier.py" />
+    <Compile Include="adnlearn\models\linear_model\passive_aggressive_regressor.py" />
+    <Compile Include="adnlearn\models\linear_model\perceptron.py" />
+    <Compile Include="adnlearn\models\linear_model\ransac_regressor.py" />
+    <Compile Include="adnlearn\models\linear_model\ridge_classifier.py" />
+    <Compile Include="adnlearn\models\linear_model\ridge_regression.py" />
+    <Compile Include="adnlearn\models\linear_model\sgd_classifier.py" />
+    <Compile Include="adnlearn\models\linear_model\sgd_regressor.py" />
+    <Compile Include="adnlearn\models\linear_model\theil_sen_regressor.py" />
+    <Compile Include="adnlearn\models\linear_model\__init__.py" />
+    <Compile Include="adnlearn\models\naive_bayes\bernoulli_nb.py" />
+    <Compile Include="adnlearn\models\naive_bayes\complement_nb.py" />
+    <Compile Include="adnlearn\models\naive_bayes\gaussian_nb.py" />
+    <Compile Include="adnlearn\models\naive_bayes\multinomial_nb.py" />
+    <Compile Include="adnlearn\models\naive_bayes\__init__.py" />
+    <Compile Include="adnlearn\models\neighbors\k_neighbors_classifier.py" />
+    <Compile Include="adnlearn\models\neighbors\k_neighbors_regressor.py" />
+    <Compile Include="adnlearn\models\neighbors\nearest_centroid.py" />
+    <Compile Include="adnlearn\models\neighbors\radius_neighbors_classifier.py" />
+    <Compile Include="adnlearn\models\neighbors\radius_neighbors_regressor.py" />
+    <Compile Include="adnlearn\models\neighbors\__init__.py" />
+    <Compile Include="adnlearn\models\neural_network\mlp_classifier.py" />
+    <Compile Include="adnlearn\models\neural_network\mlp_regressor.py" />
+    <Compile Include="adnlearn\models\neural_network\__init__.py" />
+    <Compile Include="adnlearn\models\selector.py" />
+    <Compile Include="adnlearn\models\semi_supervised\label_propagation.py" />
+    <Compile Include="adnlearn\models\semi_supervised\label_spreading.py" />
+    <Compile Include="adnlearn\models\semi_supervised\__init__.py" />
+    <Compile Include="adnlearn\models\svm\linear_svc.py" />
+    <Compile Include="adnlearn\models\svm\linear_svr.py" />
+    <Compile Include="adnlearn\models\svm\nu_svc.py" />
+    <Compile Include="adnlearn\models\svm\nu_svr.py" />
+    <Compile Include="adnlearn\models\svm\svc.py" />
+    <Compile Include="adnlearn\models\svm\svr.py" />
+    <Compile Include="adnlearn\models\svm\__init__.py" />
+    <Compile Include="adnlearn\models\tree\decision_tree_classifier.py" />
+    <Compile Include="adnlearn\models\tree\decision_tree_regressor.py" />
+    <Compile Include="adnlearn\models\tree\extra_tree_classifier.py" />
+    <Compile Include="adnlearn\models\tree\extra_tree_regressor.py" />
+    <Compile Include="adnlearn\models\tree\__init__.py" />
+    <Compile Include="adnlearn\models\__init__.py" />
+    <Compile Include="adnlearn\preprocessor\columnTransformer.py" />
+    <Compile Include="adnlearn\preprocessor\html.py" />
+    <Compile Include="adnlearn\preprocessor\nlp.py" />
+    <Compile Include="adnlearn\preprocessor\__init__.py" />
+    <Compile Include="adnlearn\storage\onnx.py" />
+    <Compile Include="adnlearn\storage\pickle.py" />
+    <Compile Include="adnlearn\storage\__init__.py" />
+    <Compile Include="adnlearn\summarize\model_statistics.py" />
+    <Compile Include="adnlearn\summarize\summarize_data.py" />
+    <Compile Include="adnlearn\summarize\__init__.py" />
+    <Compile Include="adnlearn\training\model_selection.py" />
+    <Compile Include="adnlearn\training\model_trainer.py" />
+    <Compile Include="adnlearn\training\__init__.py" />
+    <Compile Include="adnlearn\__init__.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
