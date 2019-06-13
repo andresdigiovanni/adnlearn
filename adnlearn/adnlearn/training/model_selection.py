@@ -48,11 +48,13 @@ def _get_pipelines_hyperparameter(models, preprocessor):
 def _print_result(models, sort_by='score'):
     cls = [key for key in models.keys()]
     score = [models[key]['score'] for key in cls]
+    time = [models[key]['time'] for key in cls]
     
-    df_ = pd.DataFrame(data=np.zeros(shape=(len(cls),2)), columns = ['model_name', 'score'])
+    df_ = pd.DataFrame(data=np.zeros(shape=(len(cls),3)), columns = ['model_name', 'score', 'time'])
     for ii in range(0,len(cls)):
         df_.loc[ii, 'model_name'] = cls[ii]
         df_.loc[ii, 'score'] = score[ii]
+        df_.loc[ii, 'time'] = time[ii]
     
     print(df_.sort_values(by=sort_by, ascending=False))
 
