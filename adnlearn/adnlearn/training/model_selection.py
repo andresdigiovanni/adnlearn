@@ -73,7 +73,7 @@ def get_bests_models(
     preprocessor = get_column_transformer_preprocessor(num_features, cat_features, text_features)
     pipelines = _get_pipelines(models, preprocessor)
 
-    score_models = train_classifiers(X_train, y_train, pipelines, n_splits_cv, scoring)
+    score_models = train_models(X_train, y_train, pipelines, n_splits_cv, scoring)
     _print_result(score_models)
     
     bests_models = _get_bests_scored_models(score_models, n_best_training_models)
@@ -92,7 +92,7 @@ def get_best_hyperparameter_model(
     preprocessor = get_column_transformer_preprocessor(num_features, cat_features, text_features)
     pipelines = _get_pipelines_hyperparameter(models, preprocessor)
 
-    score_models = train_hyperparameter_classifiers(X_train, y_train, pipelines, n_splits_cv, scoring)
+    score_models = train_hyperparameter_models(X_train, y_train, pipelines, n_splits_cv, scoring)
     _print_result(score_models)
     
     better_model = _get_better_scored_hyperparameter_model(score_models)

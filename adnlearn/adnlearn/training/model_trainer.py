@@ -9,7 +9,7 @@ def _pretty_time(time):
     return "{:0>2}:{:05.2f}".format(int(minutes), seconds)
 
 
-def train_classifiers(X_train, y_train, models, n_splits_cv, scoring):
+def train_models(X_train, y_train, models, n_splits_cv, scoring):
     score_models = {}
     
     for model_name, model in list(models.items()):
@@ -38,7 +38,7 @@ def train_classifiers(X_train, y_train, models, n_splits_cv, scoring):
     return score_models
 
 
-def train_hyperparameter_classifiers(X_train, y_train, models, n_splits_cv, scoring):
+def train_hyperparameter_models(X_train, y_train, models, n_splits_cv, scoring):
     dict_models = {}
 
     for model_name, model in list(models.items()):

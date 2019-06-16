@@ -13,7 +13,7 @@ from adnlearn.models.svm import *
 from adnlearn.models.tree import *
 
 
-def get_multi_classification_models():
+def _get_multi_classification_models():
     # https://scikit-learn.org/stable/modules/multiclass.html
 
     models = {}
@@ -63,7 +63,7 @@ def get_multi_classification_models():
     return models
 
 
-def get_regression_models():
+def _get_regression_models():
     # https://scikit-learn.org/stable/supervised_learning.html
 
     models = {}
@@ -127,10 +127,10 @@ def get_models(model_type):
     models = {}
     
     if model_type == "multi-class":
-        models = get_multi_classification_models()
+        models = _get_multi_classification_models()
 
     elif model_type == "regression":
-        models = get_regression_models()
+        models = _get_regression_models()
     
     return models
 
