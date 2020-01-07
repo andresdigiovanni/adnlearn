@@ -8,15 +8,9 @@ def get_base_model():
 def get_hyperparameters_model():
     # https://catboost.ai/docs/concepts/python-reference_catboostclassifier.html
 
-    n_estimators = [50, 100, 500, 1000, 2000]
-    learning_rate = [0.01, 0.03, 0.1, 0.5, 1]
-    depth = [4, 6, 8, 16]
-    l2_leaf_reg = [2, 3, 5, 7]
+    n_estimators = [100, None]
 
-    param_dist = {'cls__n_estimators': n_estimators,
-                  'cls__learning_rate': learning_rate,
-                  'cls__depth': depth,
-                  'cls__l2_leaf_reg': l2_leaf_reg}
+    param_dist = {'cls__n_estimators': n_estimators}
 
     clf = CatBoostClassifier()
 
