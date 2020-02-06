@@ -51,5 +51,5 @@ def data_visualizations(dataset, target):
     plt.show()
 
     # scatter plot matrix
-    seaborn.pairplot(dataset, hue=target, height=heightDs, diag_kind="kde")
+    seaborn.pairplot(dataset, hue=target, height=heightDs, diag_kind="hist")
     plt.show()
