@@ -7,10 +7,12 @@ def get_base_model():
 
 def get_hyperparameters_model():
     n_estimators = [100, 1000]
-    max_features = ['auto', 'sqrt', 'log2', None]
+    min_samples_split = [2, 5, 10]
+    min_samples_leaf = [1, 2, 4]
 
     param_dist = {'cls__n_estimators': n_estimators,
-                  'cls__max_features': max_features}
+                  'cls__min_samples_split': min_samples_split,
+                  'cls__min_samples_leaf': min_samples_leaf}
 
     clf = ExtraTreesClassifier()
 
